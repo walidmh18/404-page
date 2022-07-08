@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+::selection{
+    background: #bdbdbd;
+}
+body{
+    position: relative;
+    min-height: 110vh;
+}
+header{
+    height: 10vh;
+    font-size: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.body-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+.left img{
+    width: 40vw;
+}
+.right{
+    width: 40%;
+}
+.right h1{
+    font-size: 2rem;
+    color: #333;
+}
+.right p{
+    color: #4f4f4f;
+    margin-top: 1.5rem;
+}
+.right a{
+    all: unset;
+    color: #bdbdbd;
+    border: #333 3px solid;
+    background: #333;
+    padding: 1rem 2rem;
+    font-size: .7rem;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.right a:hover{
+    color: #333;
+    background: #fff;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bdbdbd;
+}
+footer a{
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    .body-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left img, .right{
+        width: 80%;
+    }
+    footer{
+        padding-top: 1rem;
+        display: inline-block;
+    }
+}
